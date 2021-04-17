@@ -1,3 +1,6 @@
+{{ if (and (not (eq .Title "index")) (not (eq .Title "recent updates"))) }}
+    {{ partial "backlinks.html" . }}
+{{ end }}
 <div class="flex flex-wrap justify-between">
 {{ if .Site.IsMultiLingual }}
   {{ partial "docs/languages" . }}

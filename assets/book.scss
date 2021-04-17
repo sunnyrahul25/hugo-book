@@ -2,6 +2,10 @@
 @import "variables";
 @import "themes/{{ default "light" .Site.Params.BookTheme }}";
 
+$font-heading: {{ default "Roboto" .Site.Params.heading_font }};
+$font-body: {{ default "Roboto" .Site.Params.body_font }};
+$font-code: {{ default "Roboto" .Site.Params.code_font }};
+
 @import "normalize";
 @import "utils";
 @import "main";
